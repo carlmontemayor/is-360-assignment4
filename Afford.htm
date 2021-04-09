@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afford</title>
+  <link href="https://unpkg.com/tailwindcss@2/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="./js/afford.js">
+  </script>
+</head>
+
+<body class="bg-gray-100">
+  <nav class="bg-blue-600 text-white flex justify-center">
+    <a class="m-1 p-2" href="./Index.htm">Home</a>
+    <a class="m-1 p-2" href="./Afford.htm">Afford</a>
+    <a class="m-1 p-2" href="./CompoundInterest.htm">Compound Interest</a>
+    <a class="m-1 p-2" href="./Payment.htm">Payment</a>
+  </nav>
+  <div class="flex justify-center">
+    <div class="mt-14 w-4/12 rounded-2xl bg-blue-100 shadow-md">
+      <div class="m-10">
+        <h1 class="font-bold mt-2 mb-2  ">Calculate Maximum Affordable House Payment</h1>
+        <p class="mt-2 mb-2">To calculate the maximum affordable house payment, please input your family's gross
+          income and expenses below: </p>
+        <form class="mt-2 mb-2 items-center  inline-block">
+          <table class="table-auto">
+            <thead>
+              <tr>
+                <th class="p-4">Prompts</th>
+                <th class="p-4">Input Values</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2">Family Gross Income (dollars)</td>
+                <td class="p-2">
+                  <input class="px-3 py-3 rounded" placeholder="$1000.00" type="number" id="familyGrossIncome" />
+                </td>
+              </tr>
+              <tr>
+                <td class="p-2">Expenses (dollars)</td>
+                <td class="p-2">
+                  <input class="px-3 py-3 rounded" placeholder="$100.00" type="number" id="expenses" />
+                </td>
+              </tr>
+              <tr>
+                <td class="p-2">Result</td>
+                <td class="p-2">
+                  <input class="px-3 py-3 rounded" placeholder="$1000.00" id="result" readonly />
+                </td>
+              </tr>
+              <tr>
+                <td class="p-2">Percentage Used</td>
+                <td class="p-2">
+                  <input class="px-3 py-3 rounded" placeholder="29%" id="percentageUsed" readonly />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="mt-5 p-2 text-white bg-black rounded-md ml-2" type="button"
+            onclick="calculateMaxAffordableHousePayment()">Calculate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class="w-full bg-blue-600 text-white mt-16">
+    <div class="flex justify-between">
+      <p class="p-2">Assignment 4</p>
+      <p class="p-2">Business Calculations</p>
+      <p class="p-2">&copy; Carl Montemayor</p>
+    </div>
+  </footer>
+</body>
+
+</html>
